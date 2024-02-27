@@ -41,6 +41,9 @@
     color: white;
     text-decoration: none;
 }
+.menu-list{
+    color: black;
+}    
 
 .discover{
     display: flex;
@@ -81,11 +84,14 @@
 .about span p{
     color: var(--Dark_Gray);
 }
-.fa-regular{
-    display : none;
+.fa-solid{
+    display: none;
 }
 
 @media screen and (min-width:370px) and (max-width: 740px){
+    *{
+        border: 2px solid red;
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -99,8 +105,8 @@
     .img-menu ul{
         display: none;
     }
-    .fa-regular{
-        display:block;
+    .menu-list{
+        text-align: center;
     }
     .img-menu, .discover{
         width: 100%;
@@ -127,6 +133,10 @@
     }
     .text{
         margin: 2%;
+    }
+    .text a{
+        display: flex;
+        width: 30%;
     }
     .arrow{
         display: flex;
